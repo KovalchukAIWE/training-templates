@@ -1,0 +1,42 @@
+@mixin mq-tablet {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin mq-desktop {
+  @media (min-width: 1140px) { @content; }
+}
+
+@mixin font-title-m {
+  font-size: $fs-title-m;
+  font-weight: $fw-title;
+}
+
+@mixin font-title-s {
+  font-size: $fs-title-s;
+  font-weight: $fw-title;
+}
+
+@mixin font-subtitle-m {
+  font-size: $fs-subtitle;
+  font-weight: $fw-subtitle;
+}
+
+@mixin font-name-m {
+  font-size: $fs-name-m;
+  font-weight: $fw-subtitle;
+}
+
+@mixin font-name-s {
+  font-size: $fs-name-s;
+  font-weight: $fw-subtitle;
+}
+
+@mixin font-role-m {
+  font-size: $fs-subtitle;
+  font-weight: $fw-subtitle;
+}
+
+@mixin font-role-s {
+  font-size: $fs-subtitle-s;
+  font-weight: $fw-subtitle;
+}
