@@ -1,0 +1,26 @@
+@mixin mq-tablet {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin mq-desktop {
+  @media (min-width: 1140px) { @content; }
+}
+
+@mixin font-title {
+  font-size: $fs-title;
+  font-weight: $fw-title;
+}
+
+@mixin font-subtitle-mob {
+  font-size: $fs-subtitle-mob;
+  font-weight: $fw-subtitle;
+}
+
+@mixin font-description {
+  font-size: $fs-description;
+  font-weight: $fw-subtitle;
+}
+
+@mixin df {
+  display: flex;
+}
