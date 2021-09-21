@@ -1,0 +1,76 @@
+.team-squares {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  color: #4F4F4F;
+  width: 50%;
+  @include mq-tablet {
+    width: 700px;
+  }
+
+  &__title {
+    @include font-title-s;
+    @include mq-tablet {
+      @include font-title-m;
+    }
+  }
+
+  &__subtitle {
+    @include font-subtitle-m;
+  }
+}
+
+.teammates {
+  color: #4F4F4F;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  @include mq-tablet {
+    width: 700px;
+  }
+
+  @include mq-desktop {
+    width: 1080px;
+  }
+
+  &__photo {
+    width: 90px;
+    height: 90px;
+    @include mq-tablet {
+      width: 190px;
+      height: 190px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    padding: 30px;
+  }
+
+  &__description {
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  &__name {
+    @include font-name-s;
+    @include mq-tablet {
+      @include font-name-m;
+    }
+  }
+  
+  &__role {
+    @include font-role-s;
+    @include mq-tablet {
+      @include font-role-m;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import './mixins';
+@import './variables';
+@import './bg';
+@import './our-mission';
+@import './team-squares';
+@import './cover-primary';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
