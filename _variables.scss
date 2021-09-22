@@ -1,28 +1,32 @@
-$fs-h1: 72px;
-$fs-h1-s: 46px;
-$fs-h2: 48px;
-$fs-h2-mob: 24px;
-$fs-h2-s: 24px;
-$fs-h3: 34px;
-$fs-h3-s: 20px;
+$fs-72: 72px;
+$fs-48: 48px;
+$fs-46: 46px;
+$fs-38: 38px;
+$fs-34: 34px;
+$fs-24: 24px;
+$fs-20: 20px;
 
+$fs-title-m: $fs-72;
+$fs-title-s: $fs-46;
 
-$fs-title-m: $fs-h1;
-$fs-title-s: $fs-h1-s;
-$fs-title: $fs-h1;
-$fs-subtitle: $fs-h2;
-$fs-subtitle-mob: $fs-h2-mob;
-$fs-subtitle-s: $fs-h3-s;
-$fs-description: $fs-h3;
-$fs-name-m: $fs-h2;
-$fs-name-s: $fs-h2-s;
+$fs-subtitle-m: $fs-48;
+$fs-subtitle-s: $fs-38;
 
+$fs-description-m: $fs-34;
+$fs-description-s: $fs-24;
 
-$fw-bold: 800;
-$fw-normal: 400;
+$fs-link-m: $fs-48;
+$fs-link-s: $fs-24;
 
-$fw-title: $fw-bold;
-$fw-subtitle: $fw-normal;
+$fs-card: $fs-20;
+
+$fw-800: 800;
+$fw-700: 700;
+$fw-400: 400;
+
+$fw-bold: $fw-800;
+$fw-semi-bold: $fw-700;
+$fw-light: $fw-400;
 
 $c-blue: #2299EF;
 $c-grey: #4F4F4F;

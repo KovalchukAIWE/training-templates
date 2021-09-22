@@ -26,14 +26,14 @@
 }
 
 .text-wrapper {
-  color: #4F4F4F;
+  color: $c-text;
   order: 1;
   padding: 20px;
   height: auto;
   text-align: center;
   position: relative;
   @include mq-desktop {
-    padding: 0 74px;
+    padding: 150px 74px 240px;
     text-align: left;
     order: 2;
   }
@@ -48,20 +48,31 @@
 
   &__title {
     margin-top: 150px;
-    @include font-title;
-    margin-bottom: 70px;
+    font-size: $fs-title-s;
+    font-weight: $fw-bold;
+    @include mq-tablet {
+      font-size: $fs-title-m;
+    }
+    @include mq-desktop {
+      margin-top: 0;
+    }
   }
 
   &__subtitle {
     margin-bottom: 20px;
-    @include font-subtitle-mob;
+    font-size: $fs-subtitle-s;
+    font-weight: $fw-semi-bold;
     @include mq-tablet {
-      font-size: $fs-subtitle;
+      font-size: $fs-subtitle-m;
     }
   }
 
   &__description {
-    @include font-description;
     margin-bottom: 50px;
+    font-size: $fs-description-s;
+    font-weight: $fw-light;
+    @include mq-tablet {
+      font-size: $fs-description-m;
+    }
   }
 }

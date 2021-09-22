@@ -15,6 +15,9 @@
   align-items: center;
   text-align: center;
   font-weight: 800;
-  font-size: 72px;
+  font-size: $fs-title-s;
   text-shadow: 4px 4px #73777A;
+  @include mq-tablet {
+    font-size: $fs-title-m;
+  }
 }

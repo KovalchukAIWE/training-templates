@@ -3,74 +3,75 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  @include mq-desktop {
+    justify-content: space-between;
+    padding: 170px 20px;
+  }
 }
 
 .text {
   color: #4F4F4F;
-  width: 50%;
-  @include mq-tablet {
-    width: 700px;
+  width: 550px;
+  text-align: center;
+  @include mq-desktop {
+    text-align: left;
   }
 
   &__title {
-    @include font-title-s;
+    margin-top: 150px;
+    font-size: $fs-title-s;
+    font-weight: $fw-bold;
     @include mq-tablet {
-      @include font-title-m;
+      font-size: $fs-title-m;
+    }
+    @include mq-desktop {
+      margin-top: 0;
     }
   }
 
-  &__subtitle {
-    @include font-subtitle-m;
+  &__description{
+    font-size: $fs-description-s;
+    font-weight: $fw-light;
+    @include mq-tablet {
+      font-size: $fs-description-m;
+    }
   }
 }
 
 .teammates {
-  color: #4F4F4F;
-  width: 50%;
+  color: $c-text;
+  width: 630px;
   display: flex;
   flex-wrap: wrap;
-  @include mq-tablet {
-    width: 700px;
-  }
 
-  @include mq-desktop {
-    width: 1080px;
+  &__card {
+    width: 315px;
+    height: 170px;
+    display: flex;
+    padding: 15px 0 15px 15px;
   }
 
   &__photo {
     width: 90px;
     height: 90px;
     @include mq-tablet {
-      width: 190px;
-      height: 190px;
+      width: 140px;
+      height: 100%;
     }
-  }
-
-  &__block {
-    display: flex;
-    padding: 30px;
   }
 
   &__description {
     align-items: center;
-    margin-top: 40px;
-    margin-left: 10px;
-  }
-
-  &__name {
-    @include font-name-s;
+    padding-top: 18px;
+    padding-left: 20px;
+    font-size: $fs-card;
+    font-weight: $fw-light;
     @include mq-tablet {
-      @include font-name-m;
-    }
-  }
-  
-  &__role {
-    @include font-role-s;
-    @include mq-tablet {
-      @include font-role-m;
+      padding-top: 40px;
     }
   }
 }
